@@ -1,11 +1,21 @@
-h1 {
+*{
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+body{
+    background-color: #363636;
+}
+h2 {
     font-family: Helvetica;
     text-align: center;
+    font-size: 2rem;
+    color: #5e17eb;
 }
   
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 5px;
 }
   
@@ -73,6 +83,9 @@ color: #000;
     }
     .gallery-item{
         flex: 0 0 calc(90% - 10px);
+    }
+    .gallery-image{
+        object-fit: contain;
     }
     .lightbox-image{
         max-width: 90%;
